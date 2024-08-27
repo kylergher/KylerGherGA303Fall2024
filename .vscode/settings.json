@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "KylerGherGA303.sln"
+    "dotnet.defaultSolution": "KylerGherGA303Fall2024.sln"
 }
