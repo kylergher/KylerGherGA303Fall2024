@@ -10,6 +10,7 @@ public class DataTypePracticeWORD2 : MonoBehaviour
 
 //anyways
 
+
     public char LetterOne = 'e';
     public char LetterTwo = 'v';
     public char LetterThree  = 'r';
