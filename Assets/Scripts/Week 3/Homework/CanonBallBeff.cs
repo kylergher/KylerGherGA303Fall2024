@@ -14,17 +14,19 @@ public class CanonBallBeff : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(this.gameObject.setActive == true)
-        {
-            GameObject go = Instantiate(Ball2, SpawnLocation.position, SpawnLocation.rotation);
-            go.GetComponent<Rigidbody>().AddForce(go.transform.up *  BeffBallSpeed);
-        }
-        
+      
+    }
+
+    public void OnEnable()
+    {
+        Debug.Log("Uhhh, who ordered one ball?");
+        GameObject go = Instantiate(Ball2, SpawnLocation.position, SpawnLocation.rotation);
+        go.GetComponent<Rigidbody>().AddForce(go.transform.up * BeffBallSpeed);
     }
 }

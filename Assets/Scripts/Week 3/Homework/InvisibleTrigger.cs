@@ -22,6 +22,7 @@ public class InvisibleTrigger : MonoBehaviour
     {
         if(phase.gameObject.CompareTag("IAmABall") == true)
         {
+            Debug.Log("Get Changed Idiot");
             WOW.SetActive(true);
 
             phase.gameObject.tag = "DoublePower";

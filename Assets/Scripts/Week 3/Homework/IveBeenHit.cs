@@ -7,6 +7,7 @@ public class IveBeenHit : MonoBehaviour
     //this script should be applied to any object that will be hit by the ball 
     public GameObject Magic;
     public GameObject MagicMissile;
+    public CanonBallBeff NewBall;
 
     // Start is called before the first frame update
     void Start()

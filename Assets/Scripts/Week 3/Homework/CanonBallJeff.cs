@@ -22,6 +22,7 @@ public class CanonBallJeff : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("Proof taht this is working (kyler you're doing so good)");
             GameObject go = Instantiate(BallPrefab, BallSpawnLocation.position, BallSpawnLocation.rotation);
             go.GetComponent<Rigidbody>().AddForce(go.transform.up *  JeffBallSpeed);
         }
