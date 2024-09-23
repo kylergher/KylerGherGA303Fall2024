@@ -6,7 +6,7 @@ public class NewCannon : MonoBehaviour
 {
 
     public GameObject projectile;
-    public GameObject projectileSpawnPosition;
+    public Transform projectileSpawnPosition;
     public float speed = 750f;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,8 @@ public class NewCannon : MonoBehaviour
 
     public void FireCannon()
     {
-        GameObject Go = 
+        GameObject Go = Instantiate(projectile, projectileSpawnPosition.position, projectileSpawnPosition.rotation);
+        
+        Go.GetComponent<Rigidbody>().AddForce(Go.transform.forward * speed);
     }
 }
