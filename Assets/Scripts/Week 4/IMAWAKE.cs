@@ -5,7 +5,11 @@ using Unity.UI;
 
 public class IMAWAKE : MonoBehaviour
 {
-    public GameObject TheyreAlive;
+    public float vanish = 0f;
+    public float vabish = 2f;
+    public GameObject textbox;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +20,16 @@ public class IMAWAKE : MonoBehaviour
     void Update()
     {
 
+    }
+    private void OnEnable()
+    {
+        vanish += Time.deltaTime;
+        if (vanish == 2f)
+        {
+
+
+            Debug.Log("k im gonna dip now, peace");
+            textbox.SetActive(false);
+        }
     }
 }

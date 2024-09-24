@@ -11,6 +11,7 @@ public class ButtonStuff : MonoBehaviour
     public float timerDuration = 3f;
     public GameObject newButton;
     public bool hasTimerGoneOff = false;
+    public IMAWAKE pee;
 
     public List<GameObject> cubes = new List<GameObject>();
 
@@ -43,6 +44,8 @@ public class ButtonStuff : MonoBehaviour
         DontPressMe.SetActive(false);
     }
 
+
+    
     public void EnableCubes()
     {
         for (int i = 0; i < cubes.Count; i++)
