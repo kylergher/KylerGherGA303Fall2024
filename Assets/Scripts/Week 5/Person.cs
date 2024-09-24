@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.UI;
 
-public class IMAWAKE : MonoBehaviour
+public class Person : MonoBehaviour
 {
-    public GameObject TheyreAlive;
+    [SerializeField] private string myName;
+
+    public Color hairColor;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,11 @@ public class IMAWAKE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
 
+    public string getName()
+    {
+        return myName;
     }
 }
