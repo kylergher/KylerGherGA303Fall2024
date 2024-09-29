@@ -20,6 +20,6 @@ public class KeyCheck : MonoBehaviour
 
     public void checkForKey()
     {
-        if
+       
     }
 }
