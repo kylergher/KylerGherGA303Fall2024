@@ -18,6 +18,7 @@ public class UIScript : MonoBehaviour
     public TextMeshProUGUI oops;
     public float timerDuration2;
     public float timer2;
+   
     
 
     // Start is called before the first frame update
