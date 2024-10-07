@@ -12,6 +12,9 @@ TagManager:
   - Desk
   - hasKey
   - usedKey
+  - BronzeDoor
+  - SilverDoor
+  - GoldDoor
   layers:
   - Default
   - TransparentFX
